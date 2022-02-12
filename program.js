@@ -43,6 +43,13 @@
 // };
 
 //Exercise 8
-module.exports = function midpoint(lowerBound = 0, upperBound = 1) {
-    return (lowerBound + upperBound) / 2;
+// module.exports = function midpoint(lowerBound = 0, upperBound = 1) {
+//     return (lowerBound + upperBound) / 2;
+// };
+
+//Exercise 9
+module.exports = (inputString, numberOfExclamations = inputString.length) => {
+    const exclamations = ('!').repeat(numberOfExclamations);
+    const sentence = inputString + exclamations;
+    return sentence;
 };
