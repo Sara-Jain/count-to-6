@@ -13,11 +13,16 @@
 // console.log(`[${inputs}] becomes "${result}"`);
 
 //Excercise 4
-var foot = {
-    kick: function () {
-        this.yelp = "Ouch!";
-        setImmediate(() => console.log(this.yelp));
-    }
-};
+// var foot = {
+//     kick: function () {
+//         this.yelp = "Ouch!";
+//         setImmediate(() => console.log(this.yelp));
+//     }
+// };
+// foot.kick();
 
-foot.kick();
+//Exercise 5
+let userArray = process.argv.slice(2);
+let user = {};
+[, user.username, user.email] = userArray;
+console.log(user);
