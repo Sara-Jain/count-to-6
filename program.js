@@ -28,6 +28,16 @@
 // console.log(user);
 
 //Exercise 6
-const numbers = process.argv.slice(2);
-let minimumNumber = Math.min(...numbers);
-console.log(`The minimum of [${numbers}] is ${minimumNumber}`);
+// const numbers = process.argv.slice(2);
+// let minimumNumber = Math.min(...numbers);
+// console.log(`The minimum of [${numbers}] is ${minimumNumber}`);
+
+//Exercise 7
+module.exports = function average(...args) {
+    let sum = 0;
+    args.forEach(function (value) {
+        sum += value;
+    });
+    const avg = sum/args.length;
+    return avg;
+};
