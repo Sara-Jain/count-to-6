@@ -33,11 +33,16 @@
 // console.log(`The minimum of [${numbers}] is ${minimumNumber}`);
 
 //Exercise 7
-module.exports = function average(...args) {
-    let sum = 0;
-    args.forEach(function (value) {
-        sum += value;
-    });
-    const avg = sum/args.length;
-    return avg;
+// module.exports = function average(...args) {
+//     let sum = 0;
+//     args.forEach(function (value) {
+//         sum += value;
+//     });
+//     const avg = sum/args.length;
+//     return avg;
+// };
+
+//Exercise 8
+module.exports = function midpoint(lowerBound = 0, upperBound = 1) {
+    return (lowerBound + upperBound) / 2;
 };
